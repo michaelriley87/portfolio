@@ -37,9 +37,9 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  padding: 20px;
   background-color: #005f73;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: bold;
   position: fixed;
   width: 100%;
@@ -49,59 +49,67 @@ body {
 }
 
 .logo {
-  width: 75px;
+  width: 70px;
   height: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .nav {
   display: flex;
-  gap: 22px;
+  gap: 18px;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .nav-link {
   text-decoration: none;
   color: white;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   transition: font-size 0.3s ease;
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 55px;
+  }
+
   .nav {
-    gap: 10px;
+    gap: 12px;
   }
 
   .nav-link {
     font-size: 1rem;
   }
-
-  .logo {
-    width: 60px;
-  }
 }
 
 @media (max-width: 480px) {
+  .header {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 45px;
+  }
+
   .nav {
-    flex-direction: column;
-    align-items: center;
+    gap: 8px;
   }
 
   .nav-link {
     font-size: 0.9rem;
   }
-
-  .logo {
-    width: 50px;
-  }
 }
 
 main {
-  padding-top: 90px;
+  padding-top: 80px;
 }
 </style>
