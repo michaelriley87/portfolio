@@ -61,16 +61,44 @@ body {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .nav-link {
   text-decoration: none;
   color: white;
   cursor: pointer;
+  font-size: 1.25rem;
+  transition: font-size 0.3s ease;
 }
 
-.nav-link:hover {
-  color: #ffdd57;
+@media (max-width: 768px) {
+  .nav {
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 50px;
+  }
 }
 
 main {
