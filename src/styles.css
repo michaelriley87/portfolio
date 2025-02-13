@@ -1,4 +1,7 @@
-/* Global Styling */
+/* ========================== */
+/*       Global Styles        */
+/* ========================== */
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,29 +15,30 @@ body {
     overflow-x: hidden;
 }
 
-/* Header */
+/* ========================== */
+/*    Header & Navigation     */
+/* ========================== */
+
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #005f73;
-    font-size: 1.2rem;
-    font-weight: bold;
+    align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    align-items: center;
+    padding: 20px;
+    background-color: #005f73;
+    font-size: 1.2rem;
+    font-weight: bold;
     z-index: 1000;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     gap: 18px;
     align-items: center;
-    justify-content: flex-start;
     width: 100%;
 }
 
@@ -58,7 +62,10 @@ body {
     padding: 0 20px;
 }
 
-/* Sections */
+/* ========================== */
+/*          Sections          */
+/* ========================== */
+
 .section {
     padding-top: 100px;
     padding-bottom: 80px;
@@ -71,29 +78,27 @@ body {
     gap: 20px;
 }
 
-/* Section Titles */
 .section-title {
     font-size: 2.8rem;
     font-weight: 800;
     text-transform: uppercase;
     color: #00a6a6;
     letter-spacing: 1px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
 }
 
-/* Section Text */
 .section-text {
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.6;
     max-width: 700px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
-/* Buttons */
+/* ========================== */
+/*          Buttons           */
+/* ========================== */
+
 .btn {
     padding: 12px 24px;
     font-size: 1rem;
@@ -109,7 +114,16 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Projects Section */
+.btn:hover {
+    background: linear-gradient(135deg, #9854cb, #b88ae0);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(106, 13, 173, 0.3);
+}
+
+/* ========================== */
+/*          Projects          */
+/* ========================== */
+
 .projects {
     text-align: center;
     padding: 60px 20px;
@@ -119,7 +133,6 @@ body {
     gap: 40px;
 }
 
-/* Individual Project Cards */
 .project {
     background: rgba(0, 0, 0, 0.6);
     padding: 30px;
@@ -130,24 +143,27 @@ body {
     margin: 0 auto;
     text-align: center;
     border: 2px solid #00a6a6;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Divider Between Projects */
+.project:hover {
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 6px 16px rgba(0, 166, 166, 0.5);
+}
+
 .project + .project {
     border-top: 2px solid rgba(0, 166, 166, 0.5);
     padding-top: 40px;
     margin-top: 40px;
 }
 
-/* Project Titles */
 .project-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #00a6a6;
     margin-bottom: 10px;
 }
 
-/* Project Descriptions */
 .project-description {
     font-size: 1.1rem;
     color: #f0f0f0;
@@ -156,7 +172,6 @@ body {
     margin: 0 auto 15px;
 }
 
-/* Project Image */
 .project-image {
     max-width: 80%;
     max-height: 400px;
@@ -170,43 +185,44 @@ body {
     box-shadow: 0px 4px 12px rgba(0, 166, 166, 0.5);
 }
 
-/* Project Tech Stack */
 .project-tech {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 10px;
-    color: #ffffff
-}
-
-/* Buttons */
-.project-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
     color: #ffffff;
-    background: linear-gradient(135deg, #5a0e9e, #843bc7);
-    border-radius: 8px;
-    text-decoration: none !important;
-    margin-top: 15px;
-    transition: all 0.3s ease-in-out;
 }
 
-.project-btn:hover {
-    background: linear-gradient(135deg, #9854cb, #b88ae0);
-    transform: translateY(-2px);
+/* ========================== */
+/*     Tech Stack (Icons)     */
+/* ========================== */
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Sleek Hover Effect */
-.btn:hover {
-    background: linear-gradient(135deg, #9854cb, #b88ae0);
-    transform: translateY(-3px);
-    box-shadow: 0px 6px 12px rgba(106, 13, 173, 0.3);
+.tech-icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
 }
 
+.tech-icon:hover {
+    fill: #843bc7;
+    transform: scale(1.2);
+}
 
-/* Lightbox */
+/* ========================== */
+/*         Lightbox           */
+/* ========================== */
+
 .lightbox {
     position: fixed;
     top: 0;
@@ -229,7 +245,10 @@ body {
     background: #003a4d;
 }
 
-/* Responsive Design */
+/* ========================== */
+/*     Responsive Design      */
+/* ========================== */
+
 @media (max-width: 768px) {
     .section {
         padding-top: 120px;
@@ -251,14 +270,14 @@ body {
 
 @media (max-width: 480px) {
     .navbar-logo {
-            width: 40px;
-            padding: 0 5px;
-        }
+        width: 40px;
+        padding: 0 5px;
+    }
 
     .navbar-link {
         font-size: 0.80rem;
     }
-        
+
     .section {
         padding-top: 100px;
         padding-bottom: 60px;

@@ -4,7 +4,7 @@
 
         <div class="projects-container">
             <div class="project">
-                <h3 class="project-title">PlayGrade</h3>
+                <h3 class="project-title">PLAYGRADE</h3>
                 <p class="section-text">A social media platform for the critical discussion of games, film/TV, and music.</p>
                 <img src="/playgrade.png" alt="PlayGrade" class="project-image" @click="openLightbox('/playgrade.png')" />
                 <p class="project-tech"><strong>Tech Stack:</strong> Next.js, Mantine, Flask, PostgreSQL</p>
@@ -13,7 +13,7 @@
             </div>
 
             <div class="project">
-                <h3 class="project-title">Kinoguessr</h3>
+                <h3 class="project-title">KINOGUESSR</h3>
                 <p class="section-text">A movie trivia game where the player must guess the movie by receiving actor hints.</p>
                 <img src="/kinoguessr.png" alt="Kinoguessr" class="project-image" @click="openLightbox('/kinoguessr.png')" />
                 <p class="project-tech"><strong>Tech Stack:</strong> React.js, Material UI, Django</p>
