@@ -6,8 +6,6 @@
     --primary-color: #00b2a9;
     --secondary-color: #843bc7;
     --navbar-bg: #003a4d;
-    --btn-gradient: linear-gradient(135deg, #843bc7, #5a0e9e);
-    --btn-hover-gradient: linear-gradient(135deg, #9854cb, #b88ae0);
     --text-color: #e0f7fa;
     --card-bg: rgba(0, 0, 0, 0.6);
     --card-hover-bg: rgba(0, 0, 0, 0.8);
@@ -131,23 +129,26 @@ body {
 .btn {
     padding: 12px 24px;
     font-size: 1rem;
-    background: var(--btn-gradient);
+    background-color: var(--secondary-color);
     color: var(--text-color);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    border: none;
-    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
     text-transform: uppercase;
     text-decoration: none !important;
     display: inline-block;
-    transition: all 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     box-shadow: var(--btn-box-shadow);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .btn:hover {
-    background: var(--btn-hover-gradient);
-    transform: translateY(-3px);
+    background-color: var(--link-hover);
+    border-color: var(--link-hover);
+    transform: translateY(-2px);
     box-shadow: var(--btn-hover-box-shadow);
 }
+
 
 /* ========================== */
 /*          Projects          */
@@ -217,10 +218,9 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 20px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .tech-icon {
