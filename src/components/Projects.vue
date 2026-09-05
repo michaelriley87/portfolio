@@ -7,7 +7,7 @@
             <div class="project">
                 <h3 class="project-title">LIMINAL</h3>
                 <p class="section-text">
-                    An ephemeral room-based chat application with real-time WebSocket messaging, temporary rooms, and inactivity-based expiration. Currently in development.
+                    An ephemeral room-based chat application with real-time WebSocket messaging, temporary rooms, unique display names, and inactivity-based expiration.
                 </p>
                 <img
                     src="/liminal.png"
@@ -16,7 +16,7 @@
                     @click="openLightbox('/liminal.png')"
                 />
                 <p class="project-tech">
-                    <strong>Tech Stack:</strong> Vue, Spring Boot, WebSockets, Java
+                    <strong>Tech Stack:</strong> Vue, Spring Boot, Java, WebSockets, Docker, Nginx
                 </p>
                 <a
                     href="https://github.com/michaelriley87/liminal-chat"
@@ -24,6 +24,13 @@
                     class="btn"
                 >
                     GitHub
+                </a>
+                <a
+                    href="https://liminal.michaelriley.au"
+                    target="_blank"
+                    class="btn"
+                >
+                    Live Demo
                 </a>
             </div>
 
@@ -37,6 +44,12 @@
                     <strong>Tech Stack:</strong> C++, JUCE, VST3
                 </p>
                 <a href="https://github.com/michaelriley87/cooee-delay-vst" target="_blank" class="btn">GitHub</a>
+                <a
+                    href="https://github.com/michaelriley87/cooee-delay-vst/releases/latest/download/Cooee.vst3"
+                    class="btn"
+                >
+                    Download VST3 (Windows)
+                </a>
             </div>
 
             <div class="project">
@@ -54,7 +67,7 @@
                 <img src="/kinoguessr.png" alt="Kinoguessr" class="project-image" @click="openLightbox('/kinoguessr.png')" />
                 <p class="project-tech"><strong>Tech Stack:</strong> React.js</p>
                 <a href="https://github.com/michaelriley87/kinoguessr" target="_blank" class="btn">GitHub</a>
-                <a href="https://michaelriley87.github.io/kinoguessr/" target="_blank" class="btn">Live Demo</a>
+                <a href="https://kinoguessr.michaelriley.au/" target="_blank" class="btn">Live Demo</a>
             </div>
 
             <div class="project">
@@ -63,7 +76,7 @@
                 <img src="/picky.png" alt="Picky" class="project-image" @click="openLightbox('/picky.png')" />
                 <p class="project-tech"><strong>Tech Stack:</strong> SvelteKit</p>
                 <a href="https://github.com/michaelriley87/picky-colour-picker/" target="_blank" class="btn">GitHub</a>
-                <a href="https://michaelriley87.github.io/picky-colour-picker/" target="_blank" class="btn">Live Demo</a>
+                <a href="https://picky.michaelriley.au/" target="_blank" class="btn">Live Demo</a>
             </div>
         </div>
 
