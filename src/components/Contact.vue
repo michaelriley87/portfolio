@@ -4,5 +4,6 @@
         <p class="section-text">If you're interested in working together or have any questions, feel free to reach out.</p>
         <p class="section-text">michaelriley87@gmail.com</p>
         <a href="mailto:michaelriley87@gmail.com" class="btn">Email Me</a>
+        <a href="https://ko-fi.com/michaelriley87" target="_blank" rel="noopener noreferrer" class="btn">Support My Work</a>
     </section>
 </template>
